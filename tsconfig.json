@@ -1,21 +1,19 @@
 {
+  "include": ["src/**/*", "**/*.json"],
   "compilerOptions": {
+    "lib": [
+      "ESNext"
+    ],
+    "target": "ESNext",
+    "allowJs": true,
     "module": "commonjs",
-    "declaration": true,
-    "removeComments": true,
+    "strict": false,
+    "moduleResolution": "node",
+    "outDir": "./dist/src",
     "emitDecoratorMetadata": true,
     "experimentalDecorators": true,
-    "allowSyntheticDefaultImports": true,
-    "target": "es2017",
     "sourceMap": true,
-    "outDir": "./dist",
-    "baseUrl": "./",
-    "incremental": true,
+    "esModuleInterop": true,
     "skipLibCheck": true,
-    "strictNullChecks": false,
-    "noImplicitAny": false,
-    "strictBindCallApply": false,
-    "forceConsistentCasingInFileNames": false,
-    "noFallthroughCasesInSwitch": false
   }
 }
