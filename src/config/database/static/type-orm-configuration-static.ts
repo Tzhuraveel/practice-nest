@@ -14,5 +14,5 @@ export const typeOrmStaticConfig: DataSourceOptions = {
   migrationsRun: PostgresqlConfigServiceStatic.runMigrations,
   migrationsTableName: 'migrations',
   entities: [folder + '/**/*.entity{.ts,.js}'],
-  migrations: [folder + '/database/migrations/*{.js,.ts}'],
+  migrations: ['src/database/migrations/*{.js,.ts}'],
 };
