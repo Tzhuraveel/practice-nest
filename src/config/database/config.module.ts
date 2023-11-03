@@ -8,6 +8,7 @@ import { PostgresqlConfigService } from './configuration.service';
   imports: [
     ConfigModule.forRoot({
       load: [configuration],
+      envFilePath: `environments/${process.env.NODE_ENV}.env`,
     }),
   ],
   providers: [ConfigService, PostgresqlConfigService],
